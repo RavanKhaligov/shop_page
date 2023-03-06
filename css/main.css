@@ -1,0 +1,543 @@
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+nav {
+  background-color: #f7f7f7;
+  transition: margin 0.5s ease;
+}
+nav .main-nav-div {
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+}
+nav .main-nav-div .icon-text {
+  cursor: pointer;
+}
+nav .main-nav-div .icon-text img {
+  width: 50px;
+}
+nav .main-nav-div .icon-text div {
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+nav .main-nav-div .hamburger-menu a {
+  color: #000;
+  font-size: 30px;
+}
+nav .main-nav-div .navbar-menu {
+  width: 100% !important;
+  z-index: -1;
+  background: #f7f7f7;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  padding-bottom: 30px;
+  transition: all 0.5s ease;
+}
+nav .main-nav-div .navbar-menu .flex {
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+nav .main-nav-div .navbar-menu .flex li {
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 18px;
+}
+nav .main-nav-div .navbar-menu .flex li a {
+  color: #343434;
+  padding: 7px 15px;
+}
+nav .main-nav-div .navbar-menu .flex li:last-child {
+  font-size: 17px;
+}
+nav .main-nav-div .navbar-menu .flex li:last-child a {
+  color: #fff;
+  background-color: orangered;
+}
+nav .main-nav-div .navbar-menu.index {
+  z-index: 0;
+}
+
+nav.opened {
+  margin-bottom: 220px;
+}
+
+.section-a {
+  padding-bottom: 20px;
+  padding-top: 50px;
+  background-color: #f7f7f7;
+}
+.section-a main .slider {
+  position: relative;
+  padding: 15px;
+}
+.section-a main .slider .slider-item {
+  display: none;
+  text-align: center;
+}
+.section-a main .slider .slider-item .flex {
+  flex-direction: column;
+}
+.section-a main .slider .slider-item .flex .text h2 {
+  font-size: 50px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 800;
+}
+.section-a main .slider .slider-item .flex .text p {
+  margin-top: 40px;
+  line-height: 25px;
+}
+.section-a main .slider .slider-item .flex .text .btn-group button {
+  color: #fff;
+  border: 0;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 40px 5px;
+}
+.section-a main .slider .slider-item .flex .text .btn-group button:hover {
+  background: #fff;
+}
+.section-a main .slider .slider-item .flex .text .btn-group .orange {
+  background-color: orangered;
+  border: 1px solid orangered;
+}
+.section-a main .slider .slider-item .flex .text .btn-group .orange:hover {
+  color: orangered;
+}
+.section-a main .slider .slider-item .flex .text .btn-group .black {
+  background-color: #000;
+  border: 1px solid #000;
+}
+.section-a main .slider .slider-item .flex .text .btn-group .black:hover {
+  color: #000;
+}
+.section-a main .slider .slider-item .flex .slider-img img {
+  width: 80%;
+}
+.section-a main .slider .fade {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+@keyframes faded {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.section-a main .slider .clickers {
+  justify-content: center;
+}
+.section-a main .slider .clickers .prev, .section-a main .slider .clickers .next {
+  cursor: pointer;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.section-a main .slider .clickers .prev {
+  background-color: orangered;
+}
+.section-a main .slider .clickers .next {
+  background-color: #000;
+}
+
+.section-b {
+  padding: 10px;
+  margin-top: 0px;
+  background: #fff;
+}
+.section-b header {
+  text-align: center;
+}
+.section-b header h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.section-b header p {
+  line-height: 25px;
+}
+.section-b .flex {
+  flex-direction: column;
+  margin-top: 30px;
+}
+.section-b .flex .flex-item {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.section-b .flex .flex-item:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+.section-b .flex .flex-item .flex-item-img {
+  margin-bottom: 20px;
+}
+.section-b .flex .flex-item .flex-item-img img {
+  width: 15%;
+}
+.section-b .flex .flex-item .flex-item-content .fruit {
+  color: orangered;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.section-b .flex .flex-item .flex-item-content .content {
+  line-height: 25px;
+}
+.section-b .btn-group {
+  text-align: center;
+  margin: 20px 0;
+}
+.section-b .btn-group button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+.section-b .btn-group button:hover {
+  color: #000;
+  background: #fff;
+}
+
+.section-c {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.section-c header h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.section-c header p {
+  line-height: 25px;
+}
+.section-c .flex {
+  flex-direction: column;
+}
+.section-c .flex .flex-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.section-c .flex .flex-item .big {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.section-c .flex .flex-item .content {
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.section-c .flex .flex-item .black {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+.section-c .flex .flex-item .black:hover {
+  color: #000;
+  background: #fff;
+}
+.section-c .flex .flex-item .flex-item-img {
+  margin-top: 30px;
+}
+.section-c .flex .flex-item .flex-item-img img {
+  width: 60%;
+  max-width: 250px;
+  max-height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-d {
+  margin-top: 40px;
+  background-image: url("https://themewagon.github.io/tropika/images/tasty-image.png");
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section-d h2 {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.section-e {
+  background: url("https://themewagon.github.io/tropika/images/orange-dish.png"), #fff;
+  background-size: 105px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 15px 10px;
+}
+.section-e .form-div {
+  width: 80%;
+}
+.section-e .form-div header h2 {
+  font-size: 30px;
+}
+.section-e .form-div form input {
+  display: block;
+  padding: 3px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  font-size: 18px;
+  background: inherit;
+  border-bottom: 1px solid #999;
+  outline: none;
+}
+.section-e .form-div form [type=password] {
+  margin-bottom: 50px;
+}
+.section-e .form-div form button {
+  color: #fff;
+  background: orangered;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.section-f {
+  margin-bottom: 50px;
+}
+.section-f .flex {
+  flex-direction: column;
+}
+.section-f .flex .flex-item {
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+.section-f .flex .flex-item:last-child {
+  min-width: 300px;
+}
+.section-f .flex .flex-item:not(:last-child) {
+  max-width: 170px;
+}
+.section-f .flex .flex-item .head {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.section-f .flex .flex-item .content {
+  line-height: 25px;
+}
+.section-f .flex .flex-item .icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 20px 0;
+}
+.section-f .flex .flex-item .icons a {
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 22px;
+}
+.section-f .flex .flex-item form {
+  flex-direction: row;
+}
+.section-f .flex .flex-item form input {
+  padding: 5px;
+  width: 60%;
+  border: 1px solid #999;
+  margin-right: 5px;
+}
+.section-f .flex .flex-item form button {
+  width: 30%;
+  color: #fff;
+  background: orangered;
+  padding: 5px 40px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .section-a main .slider .slider-item .flex .slider-img img {
+    width: 50%;
+  }
+  .section-b .flex .flex-item {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .section-c {
+    text-align: left;
+    padding: 30px;
+  }
+  .section-c header {
+    text-align: center;
+  }
+  .section-c .flex .flex-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-c .flex .flex-item .flex-header {
+    width: 70%;
+  }
+  .section-c .flex .flex-item .flex-item-img {
+    width: 20%;
+  }
+  .section-c .flex .flex-item .flex-item-img img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .section-e {
+    background-size: 215px;
+  }
+  .section-f {
+    margin-top: 25px;
+  }
+  .section-f .flex {
+    flex-direction: row;
+  }
+  .section-f .flex .flex-item {
+    margin: 0 20px;
+  }
+  .section-f .flex .flex-item:not(:last-child) {
+    text-align: left;
+    min-width: 100px;
+  }
+  .section-f .flex .flex-item:last-child {
+    min-width: 150px;
+  }
+  .section-f .flex .flex-item .icons {
+    flex-wrap: wrap;
+  }
+  .section-f .flex .flex-item form {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .section-f .flex .flex-item form input {
+    width: 100%;
+  }
+  .section-f .flex .flex-item form button {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav .main-nav-div {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  nav .main-nav-div .hamburger-menu {
+    display: none;
+  }
+  nav .main-nav-div .navbar-menu {
+    position: static;
+    z-index: 0;
+    padding: 0;
+    background: none;
+    transform: translate(0);
+  }
+  nav .main-nav-div .navbar-menu .flex {
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav.opened {
+    margin: 0;
+  }
+  .section-a main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section-a main .slider .slider-item .flex {
+    flex-direction: row;
+  }
+  .section-a main .slider .slider-item .flex .text {
+    width: 50%;
+  }
+  .section-b .flex {
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .section-b .flex .flex-item {
+    margin: 20px 10px;
+  }
+  .section-c {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .section-c header {
+    text-align: center;
+  }
+  .section-c .flex .flex-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-c .flex .flex-item .flex-header {
+    width: 70%;
+  }
+  .section-c .flex .flex-item .flex-item-img {
+    width: 20%;
+  }
+  .section-c .flex .flex-item .flex-item-img img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .section-e {
+    background-size: 215px;
+  }
+  .section-e .form-div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section-f .flex {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .section-f .flex .flex-item {
+    margin: 25px;
+  }
+  .section-f .flex .flex-item:not(:last-child) {
+    text-align: left;
+  }
+}/*# sourceMappingURL=main.css.map */
